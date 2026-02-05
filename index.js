@@ -53,7 +53,7 @@ app.get("/", (req, res) => {
 // rotta bacheca
 app.get("/bacheca", (req, res) => {
     res.json({
-        posts,
+        posts: posts,
         totale: posts.length
     })
 })
